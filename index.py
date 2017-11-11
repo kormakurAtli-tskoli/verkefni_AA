@@ -31,7 +31,7 @@ def set(item):
     except:
       s['karfa'] = [item]
     return """
-    <h2>Hvað viltu kaupa?</h2>
+    <h2>Hvað viltu eiginlega kaupa?</h2>
     <a href="stoll">stóll</a>
     <a href="bord">borð</a>
     <a href="heftari">heftari</a>
