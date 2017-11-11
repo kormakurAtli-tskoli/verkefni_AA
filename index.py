@@ -1,3 +1,4 @@
+import os
 from bottle import *
 from beaker.middleware import SessionMiddleware
 
@@ -62,4 +63,4 @@ def set():
     s.delete()
     return """<h2>Karfan mín...</h2><h3 style="color:red">Karfan er tóm!</h3><h3><a href="/">Aftur í vefverslun</a></h3>"""
 
-run(host="0.0.0.0",port="argv[1]")
+run(host="0.0.0.0", port=os.environ.get('PORT'))
