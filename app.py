@@ -13,6 +13,8 @@ app = SessionMiddleware(app(), session_opts)
 @route('/')
 def index():
   s = request.environ.get('beaker.session')
+  print(s)
+  print(s['test'])
   s['test'] = s.get('test',0) + 1
   s.save()
   return """
