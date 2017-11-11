@@ -15,7 +15,7 @@ def index():
   s['test'] = s.get('test',0) + 1
   s.save()
   return """
-    <h2>Hvað viltu kaupa?</h2>
+    <h2>Hvað viltu eiginlega kaupa?</h2>
     <a href="set/stoll">stóll</a>
     <a href="set/bord">borð</a>
     <a href="set/heftari">heftari</a>
